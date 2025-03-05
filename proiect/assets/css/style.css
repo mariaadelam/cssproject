@@ -278,6 +278,10 @@ input:checked+.slider:before {
   max-height: 70px;
 }
 
+[data-theme="dark"] #header .logo img {
+  filter: brightness(0.2) grayscale(1); 
+}
+
 .scrolled-offset {
   margin-top: 70px;
 }
