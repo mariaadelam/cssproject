@@ -5,24 +5,27 @@
   --mycolor: #690B22;
   --mybackground: rgba(224, 192, 95, 0.8);
   --secondary-color: #536390;
+  --primary-text: #444444;
   --font-color: #222222;
   --heading-color: #292922;
+  --bs-body-bg:#ffffff;
   --secondary-bg: #f6f9fe;
 }
 
 [data-theme="dark"] {
-  --mycolor: #6b442d;
-  --mybackground: #161625;
-  --secondary-color: #6307af;
-  --font-color: #e1e1ff;
-  --heading-color: #818cab;
-  --bs-body-bg: #0c0b0c;
-  --secondary-bg: #090a0aea;
+  --mycolor: #4A90E2;
+  --mybackground: #1C1C28;
+  --secondary-color: #1F3A93;
+  --primary-text: #E0E0E0;
+  --font-color: #C9A86A;
+  --heading-color: #A6C8FF;
+  --bs-body-bg:#0c0b0c;
+  --secondary-bg:#090a0aea;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: var(--primary-text);
 }
 
 a {
@@ -183,7 +186,7 @@ h6 {
 }
 
 input:checked+.slider {
-  background-color: #66bb6a;
+  background-color: #C9A86A;
 }
 
 input:checked+.slider:before {
@@ -598,7 +601,7 @@ input:checked+.slider:before {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(204, 200, 200, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -624,7 +627,7 @@ input:checked+.slider:before {
 }
 
 #hero h2 {
-  color: #555555;
+  color: #111111;
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
@@ -848,6 +851,7 @@ section {
 
 .featured-services .icon {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .featured-services .icon i {
@@ -861,6 +865,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  text-align: center;
 }
 
 .featured-services .title a {
@@ -871,6 +876,7 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  color: #444444;
 }
 
 .featured-services .icon-box:hover .title a,
@@ -914,7 +920,7 @@ section {
 
 .about .content ul h5 {
   font-size: 18px;
-  color: #555555;
+  color: #080808;
 }
 
 .about .content ul p {
@@ -996,6 +1002,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: #444444;
 }
 
 .services .icon-box:hover {
@@ -1136,7 +1143,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--font-color);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -1174,7 +1181,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #555555;
+  color: #696464;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -1264,14 +1271,14 @@ section {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: #444444;
 }
 
 .team .member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
-  color: #777777;
+  color: var(--primary-text);
 }
 
 .team .member:hover .social {
@@ -1283,7 +1290,7 @@ section {
   # Contact
   --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+  color: var(--primary-text);
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
   padding: 20px 0 30px 0;
@@ -1299,7 +1306,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: var(--primary-text);
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1367,6 +1374,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  background-color: #ffffff;
 }
 
 .contact .php-email-form input:focus,
@@ -1421,14 +1429,14 @@ section {
 #footer {
   background: #fff;
   padding: 0 0 30px 0;
-  color: #444444;
+  color: var(--primary-text);
   font-size: 14px;
-  background: #f1f6fe;
+  background: var(--secondary-bg);
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #f1f6fe;
+  background: var(--secondary-bg);
   text-align: center;
   font-size: 15px;
 }
@@ -1455,6 +1463,7 @@ section {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 110px);
+  background-color: #ffffff;
 }
 
 #footer .footer-newsletter form input[type=submit] {
@@ -1479,7 +1488,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: var(--bs-body-bg);
 }
 
 #footer .footer-top .footer-contact {
@@ -1503,13 +1512,13 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: var(--primary-text);
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: var(--primary-text);
   position: relative;
   padding-bottom: 12px;
 }
@@ -1542,7 +1551,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: var(--primary-text);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1583,7 +1592,7 @@ section {
   float: right;
   text-align: center;
   font-size: 13px;
-  color: #444444;
+  color: var(--primary-text);
 }
 
 @media (max-width: 768px) {
