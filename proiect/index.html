@@ -290,6 +290,30 @@
             <p>You can subscribe to have flowers delivered monthly and change your preferences anytime.</p>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-clipboard-heart"></i></div>
+            <h4><a href="">Floral Styling &amp; Consultancy</a></h4>
+            <p> Expert advice and bespoke floral styling for home decor, businesses, and special occasions.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-cart-check"></i></div>
+            <h4><a href="">Free Delivery</a></h4>
+            <p>For orders over 400 RON, transportation is free.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-person-check"></i></div>
+            <h4><a href="">Exclusive Member Discounts</a></h4>
+            <p>Subscription members enjoy special discounts, early access to new collections, and exclusive floral offers every month!</p>
+          </div>
+        </div>
   
       </div>
   
@@ -319,6 +343,7 @@
             <li data-filter=".filter-bouquets">Bouquets</li>
             <li data-filter=".filter-plants">Plants</li>
             <li data-filter=".filter-arrangements">Flower Arrangements</li>
+            <li data-filter=".filter-gifts">Gifts</li>
           </ul>
         </div>
       </div>
@@ -384,13 +409,13 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-bouquets">
-          <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="The Flower Touch" />
+        <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+          <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="Elegance in a Pot" />
           <div class="portfolio-info">
-            <h4>The Flower Touch</h4>
-            <p>Bouquets</p>
+            <h4>Champagne &amp; Roses</h4>
+            <p>Gifts</p>
             <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="The Flower Touch"><i class="bi bi-plus"></i></a>
+              class="portfolio-lightbox preview-link" title="Champagne &amp; Roses"><i class="bi bi-plus"></i></a>
           </div>
         </div>
 
@@ -411,6 +436,36 @@
             <p>Plants</p>
             <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
               class="portfolio-lightbox preview-link" title="Elegance in a Pot"><i class="bi bi-plus"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-bouquets">
+          <img src="assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="The Flower Touch" />
+          <div class="portfolio-info">
+            <h4>The Flower Touch</h4>
+            <p>Bouquets</p>
+            <a href="assets/img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="The Flower Touch"><i class="bi bi-plus"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+          <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="Elegance in a Pot" />
+          <div class="portfolio-info">
+            <h4>Sweet Love &amp; Roses</h4>
+            <p>Gifts</p>
+            <a href="assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Sweet Love &amp; Roses"><i class="bi bi-plus"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+          <img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="Elegance in a Pot" />
+          <div class="portfolio-info">
+            <h4>Cozy Pink Birthday Surprise</h4>
+            <p>Gifts</p>
+            <a href="assets/img/portfolio/portfolio-12.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Cozy Pink Birthday Surprise"><i class="bi bi-plus"></i></a>
           </div>
         </div>
       </div>
@@ -525,6 +580,26 @@
             </div>
           </div><!-- End testimonial item -->
 
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonials/testimonials-6.jpg" class="testimonial-img" alt="">
+              <h3>Paula</h3>
+              <div class="stars text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                I ordered flowers for my anniversary and was so happy with the result! The bouquet was beautiful, fresh, and delivered
+                on time. It made the day extra special. Highly recommend!
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -618,8 +693,9 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Join our newsletter for the latest news and updates!</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form action="" method="post" class="needs-validation" novalidate>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Enter a valid email address" required>
+              <input type="submit" value="Subscribe">
             </form>
           </div>
         </div>
