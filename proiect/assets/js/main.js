@@ -277,23 +277,29 @@
 
 })()
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// Form validation. Disabling form submissions if there are invalid fields
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+var forms = document.querySelectorAll('.needs-validation');
 
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      // Check if form is valid
+      if (!form.checkValidity()) {
+        event.preventDefault(); // Prevent form submission
+        event.stopPropagation(); // Stop event propagation
+        document.querySelector('.error-message').style.display = 'block'; // Show error message
+        document.querySelector('.sent-message').style.display = 'none'; // Hide success message
+      } else {
+        event.preventDefault(); // Simulate form submission for demo
+        document.querySelector('.error-message').style.display = 'none'; // Hide error message
+        document.querySelector('.sent-message').style.display = 'block'; // Show success message
+        form.reset(); // Reset form fields after successful submission
+        form.classList.remove('was-validated'); // Remove validation feedback after reset
+      }
 
-        form.classList.add('was-validated')
-      }, false)
-    })
+      form.classList.add('was-validated'); // Apply Bootstrap's validation styles
+    }, false);
+  });
 
 // Enable Dark Mode!
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
