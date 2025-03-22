@@ -8,7 +8,7 @@
   --primary-text: #444444;
   --font-color: #222222;
   --heading-color: #292922;
-  --bs-body-bg:#ffffff;
+  --bs-body-bg: #ffffff;
   --secondary-bg: #f6f9fe;
 }
 
@@ -19,8 +19,8 @@
   --primary-text: #E0E0E0;
   --font-color: #C9A86A;
   --heading-color: #A6C8FF;
-  --bs-body-bg:#0c0b0c;
-  --secondary-bg:#090a0aea;
+  --bs-body-bg: #0c0b0c;
+  --secondary-bg: #090a0aea;
 }
 
 body {
@@ -282,7 +282,7 @@ input:checked+.slider:before {
 }
 
 [data-theme="dark"] #header .logo img {
-  filter: brightness(0.2) grayscale(1); 
+  filter: brightness(0.2) grayscale(1);
 }
 
 .scrolled-offset {
@@ -763,61 +763,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # Breadcrumbs
-  --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #f1f6fe;
-  min-height: 40px;
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
   # Featured Services
   --------------------------------------------------------------*/
 .featured-services .icon-box {
@@ -877,6 +822,7 @@ section {
   line-height: 28px;
   margin-bottom: 0;
   color: #444444;
+  text-align: center;
 }
 
 .featured-services .icon-box:hover .title a,
@@ -929,31 +875,6 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-  # Clients
-  --------------------------------------------------------------*/
-.clients {
-  padding: 15px 0;
-  text-align: center;
-}
-
-.clients img {
-  max-width: 45%;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-}
-
-.clients img:hover {
-  transform: scale(1.15);
-}
-
-@media (max-width: 768px) {
-  .clients img {
-    max-width: 40%;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1071,9 +992,9 @@ section {
   color: #fff;
 }
 
-.testimonials .testimonial-item .stars i{
-  font-size: 16px; 
-  color: #FF2A68; 
+.testimonials .testimonial-item .stars i {
+  font-size: 16px;
+  color: #FF2A68;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
@@ -1290,12 +1211,12 @@ section {
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
-.pricing .section-title{
+.pricing .section-title {
   padding-bottom: 60px;
 }
 
 .pricing .pricing-item {
-  background-color: #fff;  
+  background-color: #fff;
   padding: 60px 40px;
   box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -1311,7 +1232,7 @@ section {
 
 .pricing .pricing-item h4 {
   font-size: 48px;
-  color: var(--mycolor);  
+  color: var(--mycolor);
   font-weight: 400;
 }
 
@@ -1339,7 +1260,8 @@ section {
 }
 
 .pricing ul i {
-  color: rgba(89, 177, 89, 0.795); /* Icons*/
+  color: rgba(89, 177, 89, 0.795);
+  /* Icons*/
   font-size: 24px;
   padding-right: 3px;
 }
@@ -1357,21 +1279,21 @@ section {
 }
 
 .pricing .buy-btn {
-  color: #222222; 
-  background-color: #ffffff;  
+  color: #222222;
+  background-color: #ffffff;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 4px;
-  border: 2px solid var(--mycolor); 
+  border: 2px solid var(--mycolor);
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s;
 }
 
 .pricing .buy-btn:hover {
-  background: var(--mycolor); 
+  background: var(--mycolor);
   border-color: var(--mycolor);
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .pricing .featured {
@@ -1395,30 +1317,30 @@ section {
 .pricing .featured ul .na,
 .pricing .featured ul i,
 .pricing .featured ul .na i {
-  color: var(--bs-body-bg); 
+  color: var(--bs-body-bg);
 }
 
 .pricing .featured .buy-btn {
-  background: #690B22; 
-  color: #ffffff;   
-  border-color: #ffffff; 
+  background: #690B22;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .pricing .featured .buy-btn:hover {
   background: #ffffff;
-  border-color: #ffffff; 
+  border-color: #ffffff;
   color: #222222;
 }
 
 [data-theme="dark"] .pricing .featured .buy-btn {
-  background: #4A90E2; 
-  color: #ffffff;   
-  border-color: #ffffff; 
+  background: #4A90E2;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 [data-theme="dark"] .pricing .featured .buy-btn:hover {
-  background: #ffffff; 
-  border-color: #ffffff; 
+  background: #ffffff;
+  border-color: #ffffff;
   color: #222222;
 }
 
